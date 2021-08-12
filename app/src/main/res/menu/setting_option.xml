@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Settings, should always be in the overflow -->
+    <item android:id="@+id/sort_Size"
+        android:title="Sort by Size"
+        app:showAsAction="never" />
+    <item android:id="@+id/sort_Name"
+        android:title="Sort by Name"
+        app:showAsAction="never"/>
+    <item android:id="@+id/sort_Date"
+        android:title="Sort by Date"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/menu_refresh"
+        app:showAsAction="never"
+        android:title="@string/refresh"/>
+
+    <!--  <item android:id="@+id/sort_size"
+          android:title="Size"
+          app:showAsAction="never"/>
+      <item android:id="@+id/sort_length"
+          android:title="Length"
+          app:showAsAction="never"/>
+      <item android:id="@+id/action_date"
+          android:title="Date"
+          app:showAsAction="never"/>
+          -->
+</menu>

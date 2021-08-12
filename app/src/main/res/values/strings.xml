@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">VMixer</string>
+    <string name="_4_56">4:56</string>
+    <string name="the_movie">The Movie</string>
+    <string name="thumbnail">thumbnail</string>
+    <string name="rationale_title">Permission required</string>
+    <string name="rationale_desc">It is required to run app smoothly</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="folder_name">Folder Name</string>
+    <string name="count_files">count_files</string>
+    <string name="_10">10</string>
+    <string name="_100">100</string>
+    <string name="action_settings">action_settings</string>
+    <string name="menu_refresh">menu_refresh</string>
+    <string name="refresh">refresh</string>
+</resources>

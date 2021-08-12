@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootLayout">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/exo_rew"
+            android:src="@drawable/ic_baseline_replay_10"
+            style="@style/ExoMediaButton.Rewind"
+            android:layout_margin="10dp"
+            app:tint="@color/white" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/exo_play"
+            android:src="@drawable/ic_baseline_play_circle_outline"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginVertical="10dp"
+            app:tint="@color/white"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/exo_pause"
+            android:src="@drawable/ic_baseline_pause_circle_outline"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginVertical="10dp"
+            app:tint="@color/white"/>
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/exo_ffwd"
+            android:src="@drawable/ic_baseline_forward_10"
+            android:layout_margin="10dp"
+            app:tint="@color/white"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_options">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exo_position"
+            android:layout_alignParentStart="true"
+            android:layout_margin="5dp"
+            android:text="5:00"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+        <com.google.android.exoplayer2.ui.DefaultTimeBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exo_progress"
+            android:layout_toEndOf="@id/exo_position"
+            android:layout_toStartOf="@id/exo_duration"
+            app:unplayed_color="#aaa"
+            app:played_color="#f00"
+            android:layout_marginBottom="20dp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/exo_duration"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:text="5:00"
+            android:textColor="@color/white"
+            android:textSize="12sp"/>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
